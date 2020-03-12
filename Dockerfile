@@ -17,9 +17,9 @@ RUN wget -O jdk-8u221-linux-x64.tar.gz \
 RUN tar xf flink-1.7.2-bin-hadoop27-scala_2.11.tgz -C /opt/flink/ && \
     tar xf scala-2.11.8.tgz -C /usr/local/ && \
     tar xf jdk-8u221-linux-x64.tar.gz -C /usr/local/ && \
-    tar xf scala-2.11.8.tar.gz -C /usr/local/ && \
     tar xf hadoop-2.7.7.tar.gz -C /opt/hadoop/ && \
     tar xf spark-2.4.4-bin-hadoop2.7.tgz -C /opt/spark/ && \
+    tar xf apache-hive-2.3.6-bin.tar.gz && \
     rm -f *.tgz *.tar.gz 
 
 ENV TIME_ZONE Asia/Shanghai
